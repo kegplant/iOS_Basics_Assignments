@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDQ-ZN-AGb">
-                                <rect key="frame" x="44.5" y="274.5" width="286.5" height="119.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <rect key="frame" x="46" y="275" width="283.5" height="118.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="99"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

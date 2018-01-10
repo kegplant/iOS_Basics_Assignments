@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
     func updateUI(){
         name.text=names[rando]
-//        print(name.text)
+//        print(name.text) 
         number.text=String(rando+1)
 //        name.font=UIFont(name:"systemFont",size:64)
         if(rando<2){
