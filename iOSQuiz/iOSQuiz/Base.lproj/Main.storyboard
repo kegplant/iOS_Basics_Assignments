@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y62-fL-qRd">
+                                <rect key="frame" x="58.5" y="163" width="258" height="30"/>
+                                <color key="backgroundColor" red="0.74581480641042963" green="0.8584838943348948" blue="0.94023235103626945" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Why did the programmer quit his job?">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSQ-RP-qXv">
+                                <rect key="frame" x="8" y="201" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2t-tA-ZRX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKv-My-rYs">
+                                <rect key="frame" x="343" y="201" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="moc-h2-2Cs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step to iOS development?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUt-qA-GjR">
+                                <rect key="frame" x="0.0" y="193" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-m8-puV">
+                                <rect key="frame" x="0.0" y="246" width="375" height="98"/>
+                                <string key="text">Create the user interface. As we create the UI, we will get a better understanding of our application. Then we breathe life into our application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yUt-qA-GjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Kf-cy-Wag"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUt-qA-GjR" secondAttribute="trailing" id="8DS-Ly-Gag"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pKv-My-rYs" secondAttribute="trailing" id="GQ9-py-iiS"/>
+                            <constraint firstItem="yUt-qA-GjR" firstAttribute="top" secondItem="y62-fL-qRd" secondAttribute="bottom" id="Lfh-vJ-aNN"/>
+                            <constraint firstItem="VSQ-RP-qXv" firstAttribute="top" secondItem="y62-fL-qRd" secondAttribute="bottom" constant="8" symbolic="YES" id="O1n-bb-MmF"/>
+                            <constraint firstItem="UwQ-m8-puV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SMF-lj-nCm"/>
+                            <constraint firstAttribute="trailing" secondItem="UwQ-m8-puV" secondAttribute="trailing" id="T5K-2Q-6WX"/>
+                            <constraint firstItem="y62-fL-qRd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tp8-bC-FzR"/>
+                            <constraint firstItem="yUt-qA-GjR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VlE-W2-5WF"/>
+                            <constraint firstItem="pKv-My-rYs" firstAttribute="baseline" secondItem="VSQ-RP-qXv" secondAttribute="baseline" id="X5u-HS-aDz"/>
+                            <constraint firstItem="VSQ-RP-qXv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Xrq-Cy-ubD"/>
+                            <constraint firstItem="UwQ-m8-puV" firstAttribute="top" secondItem="VSQ-RP-qXv" secondAttribute="bottom" constant="62" id="lts-wM-UIb"/>
+                            <constraint firstItem="UwQ-m8-puV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nRp-xq-XbP"/>
+                            <constraint firstItem="pKv-My-rYs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rii-4c-FdW"/>
+                            <constraint firstItem="UwQ-m8-puV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v4w-Gn-e03"/>
+                            <constraint firstItem="pKv-My-rYs" firstAttribute="top" secondItem="y62-fL-qRd" secondAttribute="bottom" constant="8" symbolic="YES" id="yhr-60-ZKB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="UwQ-m8-puV" id="kmB-vX-5Ib"/>
+                        <outlet property="questionLabel2" destination="yUt-qA-GjR" id="Mmq-Tl-aH6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
