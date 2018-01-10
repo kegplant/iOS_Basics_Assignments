@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        name.isHidden=true
-        name.font=UIFont(name:"systemFont",size:32)
+//        name.isHidden=true
+        name.text="Ready?"
+//        name.font=UIFont(name:"systemFont",size:32)
         number.isHidden=true
     }
 
@@ -35,10 +36,16 @@ class ViewController: UIViewController {
         name.text=names[rando]
 //        print(name.text)
         number.text=String(rando+1)
-        name.font=UIFont(name:"systemFont",size:64)
-
+//        name.font=UIFont(name:"systemFont",size:64)
+        if(rando<2){
+            number.textColor = .red
+        }else if rando<4{
+            number.textColor = .orange
+        }else{
+            number.textColor = .green
+        }
         name.isHidden=false
-//        number.isHidden=false
+        number.isHidden=false
     }
 
 }
